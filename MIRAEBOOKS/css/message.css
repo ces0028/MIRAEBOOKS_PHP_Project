@@ -1,0 +1,221 @@
+/* common */
+:root {
+    --main-color: #152242;
+    --second-color: #40496d;
+    --third-color: #00001c;
+    --fourth-color: #aeb5cf;
+    --logo-color: rgb(219, 187, 104);
+    --white-color: white;
+}
+
+section {
+    float: right;
+    width: 1000px;
+}
+
+#main_header {
+    padding-bottom: 10px;
+    border-bottom: 3px solid var(--main-color);
+    margin-bottom: 20px;
+}
+
+#main_header h2 {
+    width: 950px;
+    color: var(--main-color);
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#search_box {
+    display: flex;
+}
+
+#search_scope {
+    width: 80px;
+    height: 26px;
+}
+
+#search_keyword {
+    width: 240px;
+    height: 26px;
+    padding-left: 10px;
+    margin: 0px 6px;
+}
+
+#search_button {
+    display: inline;
+    background: var(--main-color);
+    color: var(--white-color);
+    border: none;
+    width: 100px;
+    height: 26px;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Noto Serif KR', serif;
+}
+
+#message_box {
+    width: 1000px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 13px;
+}
+
+#message_box a {
+    color: var(--main-color);
+}
+
+#message_box th {
+    height: 35px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+
+#message_box td {
+    height: 50px;
+    border-bottom: 1px solid var(--fourth-color);
+}
+
+#message_box #number {
+    width: 80px;
+}
+
+#message_box #message_title {
+    width: 550px;
+}
+
+#message_member_id {
+    width: 250px;
+}
+
+#register_date {
+    width: 120px;
+}
+
+#page_num {
+    width: 1000px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+}
+
+#page_num * {
+    color: var(--main-color);
+    margin: 10px 10px 50px;
+}
+
+#compose_message,
+#message_view {
+    width: 1000px;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 13px;
+}
+
+#compose_message th,
+#message_view th {
+    width: 200px;
+    background-color: var(--main-color);
+    color: var(--white-color);
+    border-bottom: 1px solid var(--white-color);
+}
+
+#compose_message td {
+    width: 800px;
+    height: auto;
+    text-align: center;
+}
+
+#compose_message #checkbox {
+    float: left;
+    height: 40px;
+    margin-left: 30px;
+    accent-color: var(--main-color);
+}
+
+#compose_message #message_send_id,
+#compose_message #message_receive_id,
+#compose_message #message_title {
+    width: 750px;
+    height: 30px;
+    border: 1px solid var(--fourth-color);
+    padding-left: 10px;
+    margin: 5px 0px;
+    font-family: 'Noto Serif KR', serif;
+}
+
+#compose_message #message_content {
+    width: 750px;
+    height: 300px;
+    border: 1px solid var(--fourth-color);
+    padding: 10px;
+    margin: 5px 0px;
+    font-family: 'Noto Serif KR', serif;
+}
+
+.receiver {
+    display: table-row;
+}
+
+.receiver.active {
+    display: none;
+}
+
+#message_view #message_title {
+    width: 500px;
+    padding: 15px 10px;
+    border-bottom: 1px solid var(--fourth-color);
+}
+
+#message_view #other {
+    width: 300px;
+    border-bottom: 1px solid var(--fourth-color);
+    text-align: center;
+}
+
+#message_view #message_content {
+    border-bottom: 1px solid var(--fourth-color);
+}
+
+#message_view #message_content textarea {
+    width: 750px;
+    height: 300px;
+    padding: 10px;
+    border: none;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 13px;
+}
+
+#send_button,
+#delete_button,
+#reply_button {
+    float: right;
+    display: inline;
+    background: var(--main-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-weight: 600;
+    margin: 20px 0px 0px 15px;
+}
+
+.error {
+    display: none;
+}
+
+.error.active {
+    display: block;
+    width: 1000px;
+    height: auto;
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}

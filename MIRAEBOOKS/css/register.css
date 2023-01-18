@@ -1,0 +1,135 @@
+/* common */
+:root {
+    --main-color:#152242;
+    --second-color:#40496d;
+    --third-color:#00001c;
+    --fourth-color:#aeb5cf;
+    --logo-color:rgb(219,187,104);
+    --white-color:white;
+}
+
+main {
+    position: relative;
+    min-height: 920px;
+}
+
+/* register */
+#register_form{
+    position: relative;
+    width: 400px;
+    height: 420px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#register_form h2 {
+    color: var(--main-color);
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+}
+
+#register_form h4 {
+    font-size: 18px;
+    text-align: start;
+    margin: 22px 5px 8px 0;
+}
+
+#register_form #member_id {
+    width: 294px;
+    height: 35px;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#id_duplication_check {
+    display: inline;
+    background: var(--main-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#register_form #member_password, 
+#register_form #member_password_confirm, 
+#register_form #member_name, 
+#register_form #member_gender, 
+#register_form #member_email, 
+#register_form #member_tel {
+    width: 400px;
+    height: 35px;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#sign_up_button,
+#reset_button {
+    display: inline;
+    background: var(--main-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin: 50px 15px 0px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#find_id_pw {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+#find_id,
+#find_pw,
+#find_id_pw_login {
+    color: var(--main-color);
+    font-size: 13px;
+    font-weight: 100;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+#find_id:hover,
+#find_pw:hover,
+#find_id_pw_login:hover {
+    text-decoration: underline;
+}
+
+main .error {
+    display: none;
+}
+
+main .success {
+    display: none;
+}
+
+main .error.active {
+    display: block;
+    width: 400px;
+    height: auto;
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+main .success.active {
+    display: block;
+    background: #D4EDDA;
+    color: #443e58;
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px auto;
+}

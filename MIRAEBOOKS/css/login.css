@@ -1,0 +1,194 @@
+/* common */
+:root {
+    --main-color:#152242;
+    --second-color:#40496d;
+    --third-color:#00001c;
+    --fourth-color:#aeb5cf;
+    --logo-color:rgb(219,187,104);
+    --white-color:white;
+}
+
+main {
+    position: relative;
+}
+
+#login_form{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-160%, 40%);
+    width: 400px;
+    height: 420px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#find_id_form {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-160%, 30%);
+    width: 400px;
+    height: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#found_id {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-160%, 100%);
+    width: 400px;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#find_pw_form {
+    position: relative;
+    width: 400px;
+    height: 590px;
+    margin: 100px auto 0;
+    text-align: center;
+}
+
+#set_new_pw_form {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: 110px auto 0;
+    text-align: center;
+}
+
+#found_id p {
+    font-size: 19px;
+    font-weight: 100;
+    margin: 60px;
+}
+
+#copy_id {
+    color: var(--main-color);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#login_form h2,
+#find_id_form h2,
+#found_id h2,
+#find_pw_form h2,
+#set_new_pw_form h2 {
+    color: var(--main-color);
+    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+}
+
+#login_form h4,
+#find_id_form h4,
+#find_pw_form h4,
+#set_new_pw_form h4 {
+    font-size: 18px;
+    text-align: start;
+    margin: 22px 5px 8px 0;
+}
+
+#login_form #member_id, 
+#login_form #member_password,
+#find_id_form #member_name,
+#find_id_form #member_email,
+#find_id_form #member_tel,
+#find_pw_form #member_id,
+#find_pw_form #member_name,
+#find_pw_form #member_email,
+#find_pw_form #member_tel,
+#set_new_pw_form #member_id,
+#set_new_pw_form #member_password,
+#set_new_pw_form #member_password_confirm {
+    width: 400px;
+    height: 35px;
+    border: 1px solid var(--main-color);
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+#save_id_box {
+    display: flex;
+    position: absolute;
+    accent-color: var(--main-color);
+    margin-top: 15px;
+    left: 10px;
+}
+
+#save_id_box span {
+    font-size: 12px;
+    font-weight: 100;
+    margin-left: 5px;
+}
+
+#login_button,
+#find_id_button,
+#find_pw_button {
+    display: inline;
+    background: var(--main-color);
+    color: var(--white-color);
+    border-radius: 10px;
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin: 50px 0px 0px;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#find_id_pw {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+}
+
+#find_id,
+#find_pw,
+#find_id_pw_login {
+    color: var(--main-color);
+    font-size: 13px;
+    font-weight: 100;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+
+#find_id:hover,
+#find_pw:hover,
+#find_id_pw_login:hover {
+    text-decoration: underline;
+}
+
+main .error {
+    display: none;
+}
+
+main .success {
+    display: none;
+}
+
+main .error.active {
+    display: block;
+    width: 400px;
+    height: auto;
+    background: #F2DEDE;
+    color: #A94442;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+main .success.active {
+    display: block;
+    background: #D4EDDA;
+    color: #443e58;
+    width: 400px;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px auto;
+}

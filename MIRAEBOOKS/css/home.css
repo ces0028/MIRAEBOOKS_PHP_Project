@@ -1,0 +1,141 @@
+/* common */
+:root {
+    --main-color: #152242;
+    --second-color: #40496d;
+    --third-color: #00001c;
+    --fourth-color: #aeb5cf;
+    --logo-color: rgb(219, 187, 104);
+    --white-color: white;
+    --reply-color: rgb(187, 30, 16);
+}
+
+/* home */
+#board_notice {
+    float: left;
+    width: 550px;
+    font-size: 14px;
+    margin-bottom: 100px;
+}
+
+#board_notice h2, #board_free h2 {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 900;
+    text-align: start;
+    margin: 0px 0px 10px 5px;
+    border-bottom: 2px solid var(--main-color);
+    padding-bottom: 5px;
+}
+
+#board_free {
+    float: right;
+    width: 550px;
+    font-size: 14px;
+    margin-bottom: 100px;
+}
+
+#board_notice_table {
+    width: 550px;
+    text-align: center;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 14px;
+}
+
+#board_free_table {
+    width: 550px;
+    text-align: center;
+    font-family: 'Noto Serif KR', serif;
+    font-size: 14px;
+}
+
+#board_notice_table th, #board_notice_table td {
+    height: 45px;
+    border-bottom: 1px solid lightgray;
+}
+
+#board_free_table th, #board_free_table td {
+    height: 45px;
+    border-bottom: 1px solid lightgray;
+}
+
+#board_notice_table a, #board_free_table a {
+    color: black;
+}
+
+#reply_count {
+    color: orangered;
+    font-size: 900;
+    margin-left: 10px;
+}
+
+#board_title {
+    width: 300px;
+}
+
+#board_member_id {
+    width: 150px;
+}
+
+#board_register_date {
+    width: 100px;
+}
+
+/*about us*/
+#home_header h2 {
+    border-bottom: 3px solid var(--main-color);
+    color: var(--main-color);
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    padding-bottom: 5px;
+    margin: 0px 0px 20px 10px;
+}
+
+#aboutus_container {
+    padding-left: 15px;
+    font-weight: 100;
+    font-size: 16px;
+    font-family: 'Noto Serif KR', serif;
+    line-height: 26px;
+}
+
+#aboutus_container span {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#source_table {
+    margin: 50px 0px 0px 20px;
+    margin-top: 50px;
+    text-align: center;
+    border-top: 1px solid var(--fourth-color);
+}
+
+#source_table th {
+    width: 100px;
+    height: 45px;
+    border-bottom: 1px solid var(--fourth-color);
+    font-family: 'Playfair Display', serif;
+}
+
+#source_table td {
+    width: 300px;
+    height: 45px;
+    border-bottom: 1px solid var(--fourth-color);
+    padding-right: 20px;
+}
+
+#source_table #en {
+    color: var(--main-color);
+    font-family: 'Playfair Display', serif;
+}
+
+#source_table #kr {
+    color: var(--main-color);
+    font-family: 'Noto Serif KR', serif;
+}
+
+#source_table #jp{
+    color: var(--main-color);
+    font-family: 'Noto Serif JP', serif;
+}
